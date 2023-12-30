@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: django-k8s
+  namespace: development
+  labels:
+    app: dajngo-app
+spec:
+  selector:
+    matchLabels:
+      app: dajngo-app
+  template:
+    metadata:
+      name: django-k8s
+      labels:
+        app: dajngo-app
+    spec:
+      containers:
+        - name: django-container
+          image: zeyadabuqasem/mysimpleapp:django
+          ports:
+            - containerPort: 5000
+          env:
+            - name: MYSQL_DB
+              value: "True"
+          envFrom:
+            - secretRef:
+                name: django-secret 
+  replicas: 1
+---
+    
