@@ -20,7 +20,6 @@ minikube addons enable ingress
 4. Add Node ip to hosts file
 ```
 echo "$(minikube ip) jodeh.xyz" | sudo tee -a /etc/hosts
-# you can change the dns to your own one 
 ```
 5. Create the namespaces
 ```
@@ -31,3 +30,4 @@ kubectl create namespace database
 ```
 kubectl apply -f .
 ```
+7. Check jodeh.xyz
