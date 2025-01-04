@@ -9,7 +9,8 @@ A simple web application demo deployed on Minikube using:
 
 ## **Usage**
 
-1. start minikube
+### 1. **Start Minikube**
+Start Minikube with the Docker driver:
 ```
 minikube start --driver docker
 ```
