@@ -14,26 +14,31 @@ Start Minikube with the Docker driver:
 ```
 minikube start --driver docker
 ```
-2. Clone the repository
+### 2. **Clone the Repository**
+Clone the GitHub repository and navigate to the project directory:
 ```
 git clone https://github.com/jodeh/K8s-Django-app.git
 cd K8s-Django-app
 ```
-3. Enable ingress addon
+### 3. **Enable the Ingress Addon**
+Enable the ingress addon in Minikube:
 ```
 minikube addons enable ingress
 ```
-4. Add Node ip to hosts file
+### 4. **Update /etc/hosts File**
+Add the Minikube node's IP to the hosts file to associate the application domain:
 ```
 echo "$(minikube ip) jodeh.xyz" | sudo tee -a /etc/hosts
 ```
-5. Create the namespaces
+### 5. **Create the namespaces**
 ```
 kubectl create namespace development
 kubectl create namespace database
 ```
-6. Deploy application
+### 6. **Deploy application**
+Apply all Kubernetes configurations from the current directory:
 ```
 kubectl apply -f .
 ```
-7. Check jodeh.xyz
+### 7. **Access the Application**
+Visit the application at http://jodeh.xyz in your browser.
