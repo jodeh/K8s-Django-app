@@ -1,8 +1,11 @@
-<h1>Django Demo on K8s</h1>
-<h3>Description</h3>
-<p>Simple webapp demo on minikube using django with mysql as database & nginx ingress</p>
-<hr>
-<h3>usage</h3>
+# Django Demo on Kubernetes
+## **Description**
+A simple web application demo deployed on Minikube using:
+- **Django**: Web application framework.
+- **MySQL**: As the database.
+- **NGINX Ingress**: To manage external access to the application.
+
+---
 
 1. start minikube
 ```
