@@ -5,6 +5,7 @@
 <p>Simple webapp demo on minikube using django with mysql as database & nginx ingress</p>
 <hr>
 <h3>usage</h3>
+
 1. start minikube
 ```
 minikube start --driver docker
