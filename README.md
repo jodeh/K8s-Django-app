@@ -1,5 +1,4 @@
 <h1>Django Demo on K8s</h1>
-<br>
 <h3>Description</h3>
 <hr>
 <p>Simple webapp demo on minikube using django with mysql as database & nginx ingress</p>
